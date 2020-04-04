@@ -21,6 +21,12 @@ void sceneCallback(SceneID scene, EventID event)
         else if (event == EVENT_LEAVE_SCENE)
             stopSound(ost1);
     }
+    if (scene == scene3) {
+        if (event == EVENT_ENTER_SCENE)
+            playSound(ost1);
+        else if (event == EVENT_LEAVE_SCENE)
+            stopSound(ost1);
+    }
 }
 
 void endG3() {
